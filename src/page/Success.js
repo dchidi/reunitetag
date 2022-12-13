@@ -9,6 +9,7 @@ import { clearCart } from "../store/features/cart_slice.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 import style from "./Success.module.css";
+import { ASSIGN_TAG_ENDPOINT } from "../API_endpoints.js";
 
 const SuccessPage = (props) => {
   const dispatch = useDispatch();
@@ -21,7 +22,7 @@ const SuccessPage = (props) => {
   useEffect(() => {
     if (props.payment && props.payment === "ok") {
       axios
-        .post("http://127.0.0.1:5000/assign_tag", { phone: phone.phone })
+        .post(ASSIGN_TAG_ENDPOINT, { phone: phone.phone })
         .then((response) => {
           setData((prev) => response.data.data.msg);
         })

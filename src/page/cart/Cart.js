@@ -13,6 +13,7 @@ import {
 import CartItem from "./CartItem";
 import { To2DP, SETTINGS } from "../../helpers";
 import Footer from "../../layout/home/Footer";
+import { CHECKOUT_ENDPOINT } from "../../API_endpoints";
 
 const Cart = () => {
   const data = useSelector((store) => store.cart.details);
@@ -34,7 +35,7 @@ const Cart = () => {
   const checkout = () => {
     // Call checkout form API
     axios
-      .post("http://127.0.0.1:5000/checkout", { details: data })
+      .post(CHECKOUT_ENDPOINT, { details: data })
       .then((response) => {
         const responseData = response.data.data;
         if (responseData.status === 303) {

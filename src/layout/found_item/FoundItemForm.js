@@ -4,6 +4,7 @@ import PageOne from "./PageOne";
 import PageTwo from "./PageTwo";
 import Confirmation from "./Confirmation";
 import SuccessPage from "./SuccessPage";
+import { FOUND_ITEM_ENDPOINT } from "../../API_endpoints";
 
 const FoundItemForm = () => {
   const [state, setState] = useState({ currentForm: 1 });
@@ -18,7 +19,7 @@ const FoundItemForm = () => {
     if (pst === 4) {
       // Call submit form API
       axios
-        .post("http://127.0.0.1:5000/found_item", {
+        .post(FOUND_ITEM_ENDPOINT, {
           phone_number: `${state.dialingCode1}${state.phone1}`,
           tag_id: `${state.code}${state.digit1}${state.digit2}`,
           languageCode: state.languageCode,

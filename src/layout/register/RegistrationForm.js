@@ -4,6 +4,7 @@ import CaptureID from "./CaptureID";
 import LinkIdToPhone from "./LinkIdToPhone";
 import Confirmation from "./Confirmation";
 import SuccessPage from "./SuccessPage";
+import { REGISTER_TAG_ENDPOINT } from "../../API_endpoints";
 
 const RegistrationForm = () => {
   const [state, setState] = useState({ currentForm: 1 });
@@ -36,7 +37,7 @@ const RegistrationForm = () => {
 
       // Call submit form API
       axios
-        .post("http://127.0.0.1:5000/register_tag", {
+        .post(REGISTER_TAG_ENDPOINT, {
           phones,
           tag: `${state.code}${state.digit1}${state.digit2}`,
           languageCode: state.languageCode,

@@ -9,6 +9,7 @@ import {
 import style from "./Contact.module.css";
 import { validatePhone, validateEmail, validateText } from "../../helpers";
 import axios from "axios";
+import { SEND_MAIL_ENDPOINT } from "../../API_endpoints";
 
 const Contact = (props) => {
   const [errorMsg, setErrorMsg] = useState({
@@ -201,7 +202,7 @@ const Contact = (props) => {
       isMsgValid
     ) {
       // save data into DB
-      axios.post("http://127.0.0.1:5000/send_mail", data).then((response) => {
+      axios.post(SEND_MAIL_ENDPOINT, data).then((response) => {
         console.log(response);
         if (response.data.data.status === 200) {
           // clear form

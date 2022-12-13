@@ -25,6 +25,7 @@ import {
 } from "../../store/features/cart_slice";
 import PhoneField from "../../components/phone_field/PhoneField";
 import axios from "axios";
+import { VALIDATE_TAG_ENDPOINT } from "../../API_endpoints";
 
 const TopUpUnits = (props) => {
   const navigate = useNavigate();
@@ -50,7 +51,7 @@ const TopUpUnits = (props) => {
     const tagId = tagRef.current?.value;
     if (tagId.length > 0) {
       axios
-        .post("http://127.0.0.1:5000/validate_tag", { tagId })
+        .post(VALIDATE_TAG_ENDPOINT, { tagId })
         .then((response) => {
           const result = response.data.data;
           if (result.status == 200) {
