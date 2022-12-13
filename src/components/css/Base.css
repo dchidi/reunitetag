@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;500&display=swap");
+:root {
+  --color-one: #0a14d6;
+  --color-two: rgb(2, 53, 121);
+  --color-three: #292bd7;
+  --color-four: #ffe600;
+  --color-five: #070f9c;
+  --white: #ffffff;
+  --off-white: #f2f5f8;
+  --black: #000000;
+  --grey: #d1cece;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  background-color: var(--white);
+  height: 100vh;
+  letter-spacing: 1.5;
+  line-height: 2;
+  font-family: Syne;
+  color: var(--color-two);
+}

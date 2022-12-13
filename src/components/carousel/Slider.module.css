@@ -1,0 +1,43 @@
+.caption {
+  position: absolute;
+  top: 20%;
+  text-align: center;
+  font-family: Syne;
+  font-weight: 500;
+  width: 100%;
+  color: white;
+  background-color: rgba(54, 54, 54, 0.551);
+  padding: 50px 10px;
+}
+
+.imgSizing {
+  max-height: 450px;
+  object-fit: cover;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 767px) {
+  .imgSizing {
+    min-height: 350px;
+    object-fit: cover;
+  }
+  .caption {
+    top: 20%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

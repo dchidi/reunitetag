@@ -1,0 +1,13 @@
+.top {
+  background-color: var(--color-one);
+  color: var(--white);
+  padding: 10px 10px 0 10px;
+  position: relative;
+  font-size: 14px;
+  font-family: Syne;
+  font-weight: 400;
+}
+.language {
+  position: absolute;
+  right: 40px;
+}

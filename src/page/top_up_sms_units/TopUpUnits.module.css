@@ -1,0 +1,39 @@
+.cart {
+  font-size: 18px;
+}
+.buynow {
+  font-size: 15px;
+  letter-spacing: 0.05em;
+}
+.line {
+  height: 2px;
+  background-color: #244876;
+}
+.tagFeatures {
+  list-style: none;
+  padding-left: 15px;
+}
+.featureItem {
+  padding-left: 10px;
+  font-size: 18px;
+}
+.buyTagImg {
+  border-radius: 50%;
+  object-fit: cover;
+  padding: 4px;
+  border: 2px solid rgb(249, 202, 136);
+}
+.inputPhone {
+  height: 45px;
+  text-indent: 10px;
+  width: 80%;
+}
+.error {
+  font-size: 16px;
+  color: rgb(250, 79, 79);
+}
+.inputField {
+  width: 100%;
+  height: 50px;
+  text-indent: 15px;
+}

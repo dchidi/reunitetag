@@ -1,0 +1,106 @@
+.option,
+.option2,
+.textarea {
+  height: 50px;
+  width: 438px;
+  text-indent: 10px;
+  color: var(--color-two);
+  border-radius: 0;
+  margin-bottom: 15px;
+}
+
+.option2 {
+  width: 200px;
+  height: 40px;
+}
+.textarea {
+  text-indent: 0;
+  padding: 10px;
+  height: 90px;
+}
+.inputFieldOne,
+.inputFieldTwo,
+.inputFieldThree,
+.inputFieldFour {
+  height: 40px;
+  margin-left: 10px;
+  width: 50px;
+  text-align: center;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.inputFieldTwo {
+  width: 98px;
+}
+.inputFieldThree {
+  width: 70px;
+}
+.inputFieldFour {
+  width: 160px;
+}
+.label {
+  /* padding-right: 50px; */
+  margin-top: -10px;
+}
+.error {
+  color: rgb(148, 42, 42);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 767px) {
+  .option,
+  .option2,
+  .textarea {
+    width: 100%;
+  }
+  .inputFieldOne,
+  .inputFieldThree {
+    margin-left: 0px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .option,
+  .option2,
+  .textarea {
+    width: 450px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .option,
+  .option2,
+  .textarea {
+    width: 100%;
+  }
+  .inputFieldOne,
+  .inputFieldThree {
+    margin-left: 0px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .option,
+  .textarea {
+    width: 400px;
+  }
+  /* .option2 {
+    width: auto;
+  } */
+  .inputFieldThree {
+    margin-left: 0px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .inputFieldThree {
+    margin-left: 10px;
+  }
+}

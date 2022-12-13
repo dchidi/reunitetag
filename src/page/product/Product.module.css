@@ -1,0 +1,25 @@
+.cart {
+  background-color: #023579;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 15px 30px;
+  color: #fff;
+  font-size: 25px;
+}
+.items_in_cart {
+  display: inline-block;
+  margin-top: -20px;
+  padding-left: 6px;
+  color: yellow;
+  font-weight: bold;
+}
+.link,
+.link:hover {
+  color: #fff;
+}
+
+.line {
+  height: 2px;
+  background-color: #244876;
+}

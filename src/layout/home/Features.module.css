@@ -1,0 +1,130 @@
+.featureWbg {
+  background-image: url(https://reunitetag2.exsite.ie/wp-content/uploads/2022/08/adam-adams-mrl0Gr8Y20s-unsplash-scaled.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  color: var(--color-two);
+  font-size: 18px;
+  height: 750px;
+}
+.card {
+  font-family: Syne;
+  border-radius: 15px;
+  background-color: var(--white);
+  box-shadow: 1px 1px 1px var(--grey);
+  position: absolute;
+  margin-top: 100px;
+}
+.color1 {
+  color: var(--color-one);
+  font-weight: bold;
+}
+.color2 {
+  color: var(--black);
+  font-weight: bold;
+}
+.fbtn,
+.fbtn2 {
+  padding: 8px 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  color: var(--color-two);
+  font-size: 16px;
+  background-color: rgba(158, 195, 244, 0.422);
+  border-radius: 10px;
+  display: inline-block;
+}
+.fbtn2 {
+  color: var(--white);
+  background-color: var(--color-two);
+}
+.fbtn:hover {
+  background-color: var(--color-two);
+  color: white;
+}
+.feature {
+  font-family: Syne;
+  color: var(--color-two);
+  font-size: 18px;
+}
+.feature h4 {
+  color: var(--color-one);
+  margin-bottom: 30px;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 767px) {
+  .featureImg {
+    width: 100%;
+    height: 350px;
+  }
+
+  .card {
+    margin: 20px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    padding: 50px;
+  }
+  .feature {
+    margin-top: 400px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .feature {
+    margin-top: 200px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .card {
+    width: 80%;
+    margin-left: 10%;
+    padding: 90px 90px 70px 90px;
+  }
+  .featureWbg {
+    max-height: 1000px;
+  }
+  .feature {
+    margin-top: 290px;
+  }
+  .featureImg {
+    width: 50%;
+  }
+  .featureContent {
+    width: 50%;
+    padding: 40px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .feature {
+    margin-top: 180px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .feature {
+    margin-top: 350px;
+  }
+  .featureWbg {
+    max-height: 900px;
+  }
+
+  .card {
+    width: 50%;
+    margin-left: 10%;
+    padding: 90px 90px 40px 90px;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .feature {
+    margin-top: 250px;
+  }
+  .featureImg {
+    height: 600px;
+  }
+}

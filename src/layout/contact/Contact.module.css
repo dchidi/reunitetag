@@ -1,0 +1,61 @@
+.contact {
+  background-image: url(https://lightleader.in/wp-content/uploads/2018/11/contactus-background.png);
+  padding-bottom: 60px;
+  color: white;
+}
+.contactBtn {
+  padding: 20px 30px 10px 30px;
+  color: white;
+  font-size: 18px;
+  background-color: var(--color-two);
+}
+.contactBtn:hover {
+  background-color: var(--color-two);
+  color: white;
+}
+
+.contactField,
+.contactTextArea {
+  border-radius: 8px;
+  text-indent: 20px;
+  background-color: rgb(228, 227, 227);
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #ddd;
+}
+.contactField {
+  height: 60px;
+}
+.contactTextArea {
+  padding-top: 15px;
+}
+.contactHeading {
+  font-weight: bold;
+  font-size: 40px;
+}
+.error {
+  color: rgb(248, 173, 173);
+  font-size: 16px;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 767px) {
+  .contact {
+    padding: 50px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

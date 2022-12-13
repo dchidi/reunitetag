@@ -1,0 +1,38 @@
+.title {
+  text-transform: uppercase;
+}
+.item {
+  border: 1px solid rgb(238, 238, 238);
+  box-shadow: 2px 2px 2px rgb(243, 239, 239);
+  border-radius: 10px;
+  padding: 40px 20px;
+  text-align: center;
+  /* height: 100%; */
+  border-top: 2px solid rgb(187, 159, 233);
+}
+.amount {
+  font-weight: bold;
+  font-size: 25px;
+}
+.off {
+  color: rgb(184, 15, 15);
+  padding-left: 10px;
+  font-size: 17px;
+  font-weight: normal;
+}
+.description {
+  font-size: 18px;
+}
+.currency {
+  font-size: 15px;
+  padding-right: 5px;
+}
+.img {
+  width: 200px;
+  max-height: 180px;
+  border-radius: 5%;
+  padding: 5px;
+  border: 1px solid #999;
+  margin-top: 20px;
+  object-fit: cover;
+}
