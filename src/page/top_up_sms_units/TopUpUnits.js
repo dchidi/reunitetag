@@ -97,7 +97,7 @@ const TopUpUnits = (props) => {
           <div className="ps-5">
             <h3>Top-Up ReuniteTag Units</h3>
             <p>
-              Each top-up gives you 10 units for your tag across various items
+              Each top-up gives you 15 units for your tag across various items
               customized with it.
             </p>
             <hr />

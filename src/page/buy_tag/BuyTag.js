@@ -104,7 +104,7 @@ const BuyTag = (props) => {
               <li>
                 <FontAwesomeIcon icon={faCircleCheck} />
                 <span className={style.featureItem}>
-                  Free Branding on Items from store
+                  Free personalization on Items from store
                 </span>
               </li>
               <li>
